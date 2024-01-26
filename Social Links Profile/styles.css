@@ -1,0 +1,85 @@
+:root{
+--Green: hsl(75, 94%, 57%);
+--White: hsl(0, 0%, 100%);
+--Grey: hsl(0, 0%, 20%);
+--Dark-Grey: hsl(0, 0%, 12%);
+--Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    background: var(--Off-Black);
+    font-family: 'Inter', sans-serif;
+    margin: 0 20rem;
+}
+
+.container { 
+    background: var(--Dark-Grey);
+    margin: 6rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.container .introduction img {
+    width: 8rem;
+    border-radius: 50%;
+    margin: 2rem;
+    margin-left: 10rem;
+}
+
+.container .introduction h1 {
+    font-size: 2rem;
+    color: var(--White);
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.container .introduction h2 {
+    font-size: 1.6rem;
+    color: var(--Green);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container .introduction p {
+    font-size: rem;
+    color: var(--White);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.container .introduction button {
+    border: none;
+    outline: 0;
+    background: var(--Grey) ;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    border-radius: .5rem;
+    color: var(--White);
+    width: 30rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.container .introduction .btn-hover:hover {
+    background: var(--Green);
+    color: var(--Off-Black);
+    cursor: pointer;
+    letter-spacing: .1rem;
+}
+    
+
