@@ -67,6 +67,10 @@ body {
     margin-left: 3rem;
 }
 
+.blog-container .text h1:hover {
+    color: var(--Yellow);
+}
+
 .blog-container .text p {
     font-size: 1.8rem;
     color: var(--Grey);
