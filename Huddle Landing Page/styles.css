@@ -1,0 +1,118 @@
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+    --white: hsl(0, 0%, 100%); 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-width: 375px;
+    max-width: 1440px;
+    background-image: url(images/bg-desktop.svg);
+    background-color: var(--Violet);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container .logo {
+    margin: 2rem 3rem;
+}
+
+.container .content {
+    display: flex;
+    gap: 1.5;
+}
+
+.container .content img {
+    margin: 0 3rem;
+}
+
+.container .text {
+    margin: 2rem 3rem;
+}
+
+.container .text h1 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.container .text p {
+    color: var(--white);
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+.container .text button {
+    outline: none;
+    border: none;
+    padding: .8rem 3rem;
+    border-radius: 2rem;
+    margin-top: 1rem;;
+    box-shadow: 1px 1px var(--Violet);
+    color: var(--Violet); 
+}
+
+.container .text button:hover {
+    background: var(--Soft-Magenta);
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.container .share {
+    padding: 1rem 0;
+}
+
+.container .share a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: var(--white);
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer {
+    text-align: end;
+    margin-right: 6rem;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white);
+    border: 2px solid var(--white);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    color: var(--Soft-Magenta);
+    border: 2px solid var(--Soft-Magenta);
+    cursor: pointer;
+}
+
