@@ -1,0 +1,128 @@
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--Light-Gray);
+    display: flex;
+    justify-content: center;
+    font-family: 'Karla', sans-serif;
+    margin: 3rem auto ;
+}
+
+.container {
+    background: white;
+    height: fit-content;
+    width: 700px;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: auto;
+   
+}
+
+.top {
+    margin: 1rem 3rem;
+    grid-column: 1 / -1;
+    text-align: left;
+}
+
+.top h1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+    color: var(--Cyan); 
+}
+
+.top h2 {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    color: var(--Bright-Yellow);
+}
+
+.top p {
+    font-size: .9rem;
+    padding-bottom: .5rem;
+    color: var(--Grayish-Blue);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bottom .left {
+    background: var(--Cyan);
+    color: white;
+    border-bottom-left-radius: 1rem;
+    padding: 3rem;
+}
+
+.bottom .left h1 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.bottom .left h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.bottom .left span {
+    font-size: 1rem;
+    color: var(--Light-Gray);
+}
+
+.bottom .left p {
+    font-size: 1rem;
+    color: var(--Light-Gray);
+}
+
+.bottom .right {
+    background: var(--Cyan);
+    opacity: 0.8;
+    color: #fff;
+    border-bottom-right-radius: 1rem;
+    padding: 3rem;
+}
+
+.bottom .right h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.bottom .right li {
+    line-height: 1.5;
+    list-style-type: none;
+    font-size: 1rem;
+    color: var(--Light-Gray);
+
+}
+
+
+button {
+    outline: none;
+    border: 0;
+    color: #fff;
+    background: var(--Bright-Yellow);
+    padding: 1rem 2rem;
+    width: 100%;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: .1rem .1rem .9rem .2rem  rgba(92, 90, 90, 0.25);
+}
+
